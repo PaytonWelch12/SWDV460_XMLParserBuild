@@ -36,6 +36,7 @@ int main (int argc, char* args[]) {
         }
 
     delete parser;
-
+    cin.get();
+    cin.get();
     return 0;
 }
