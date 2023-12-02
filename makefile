@@ -1,21 +1,10 @@
-CXX := g++
-CXXFLAGS := -std=c++11 -Wall -Wextra -pedantic
-LDFLAGS := -lxerces-c
+all: parser.exe
 
+parser.exe: parser.o
+    g++ -o parser.exe parser.o 
 
-SRCS := parser.cpp
-OBJS := $(SRCS:.cpp=.o)
-TARGET := parser
-
-.PHONY: all clean
-
-all: $(TARGET)
-
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
-
-$(TARGET): $(OBJS)
-	$(CXX) $(LDFLAGS) $(OBJS) -o $@
+parser.o: parser.cpp
+    g++ -c -o parser.o parser.cpp 
 
 clean:
-	rm -f $(OBJS) $(TARGET)
+    rm parser.o parser.exe
