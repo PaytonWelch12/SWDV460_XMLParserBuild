@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-This project was used as practice for setting up manual and automatic builds on Jenkins. It uses a simple XML parser that uses the Xerces Library, a sample XML document provided by Windows, and a simple make file to build the program. During this project, I had to create two AWS instances. One was a public RedHat Instance and the other was a Windows 10 instance. They have both been shut down since I began to exceed AWS's free services. However, I used both RedHat and Cygwin to build the parser, and on the Windows instance, I set manual and automatic builds through Jenkins which was hosted on my Windows instance.
+This project was used as practice for setting up manual and automatic builds on Jenkins. It uses a simple XML parser with the Xerces Library, a sample XML document provided by Windows, and a simple make file to build the program. During this project, I had to create two AWS instances. One was a public RedHat Instance and the other was a Windows 10 instance. They have both been shut down since I began to exceed AWS's free services. However, I used both RedHat and Cygwin to build the parser, and on the Windows instance, I set manual and automatic builds through Jenkins.
 <br />
 
 
